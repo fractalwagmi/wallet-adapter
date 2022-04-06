@@ -1,8 +1,8 @@
 {
     "private": true,
-    "name": "@solana/wallet-adapter",
-    "author": "Solana Maintainers <maintainers@solana.foundation>",
-    "repository": "https://github.com/solana-labs/wallet-adapter",
+    "name": "@fractalwagmi/wallet-adapter",
+    "author": "Dan Borstelmann",
+    "repository": "https://github.com/fractalwagmi/wallet-adapter",
     "license": "Apache-2.0",
     "type": "module",
     "workspaces": {
@@ -18,8 +18,8 @@
     },
     "scripts": {
         "clean": "lerna run clean",
-        "build": "lerna run build",
-        "test": "lerna run test",
+        "build": "lerna run --scope @solana/wallet-adapter-base --scope @solana/wallet-adapter-react --scope @fractalwagmi/wallet-adapter-react-ui build",
+        "test": "lerna run --scope @solana/wallet-adapter-base --scope @solana/wallet-adapter-react --scope @fractalwagmi/wallet-adapter-react-ui test",
         "publish": "lerna publish from-package",
         "deploy": "yarn deploy:docs && yarn deploy:example",
         "deploy:docs": "yarn docs && gh-pages --dist docs --dotfiles",
