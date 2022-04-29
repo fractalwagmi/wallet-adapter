@@ -72,7 +72,7 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
             new SlopeWalletAdapter(),
             new SolflareWalletAdapter({ network }),
             new TorusWalletAdapter(),
-            new FractalWalletAdapter({ network }),
+            new FractalWalletAdapter({ network, provider: 'http://localhost:3000/wallet-popup' }),
         ],
         [network]
     );
