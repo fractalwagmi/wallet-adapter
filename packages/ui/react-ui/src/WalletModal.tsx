@@ -160,12 +160,12 @@ export const WalletModal: FC<WalletModalProps> = ({ className = '', container = 
                                         onClick={(e) => handleFractalWalletClick(e)}
                                         startIcon={<img src="https://fractal.is/favicon.ico" alt="" />}
                                     >
-                                        Fractal Wallet
+                                        Fractal
                                         <span>Recommended</span>
                                     </Button>
                                     <div className="fractal-info">
                                         <ul>
-                                            <li>Participate in Fractal tournaments live.</li>
+                                            <li>Play in Fractal tournaments and games live.</li>
                                             <li>Login with Google, Twitter or Discord.</li>
                                             <li>Works on mobile. No download required.</li>
                                             <li>Only you control the keys.</li>
