@@ -3,6 +3,7 @@ import { createContext, useContext } from 'react';
 export interface WalletModalContextState {
     visible: boolean;
     setVisible: (open: boolean) => void;
+    fractalClick: (() => void) | undefined;
 }
 
 const DEFAULT_CONTEXT = {

@@ -10,7 +10,7 @@ import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { clusterApiUrl } from '@solana/web3.js';
 import { SnackbarProvider, useSnackbar } from 'notistack';
 import type { FC, ReactNode } from 'react';
-import React, { useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { AutoConnectProvider, useAutoConnect } from './AutoConnectProvider';
 
 const theme = createTheme({
@@ -91,7 +91,8 @@ const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
             <WalletProvider wallets={wallets} onError={onError} autoConnect={autoConnect}>
                 <MaterialUIWalletDialogProvider>
                     <AntDesignWalletModalProvider>
-                        <ReactUIWalletModalProvider>{children}</ReactUIWalletModalProvider>
+                        {/* eslint-disable-next-line @typescript-eslint/no-empty-function */}
+                        <ReactUIWalletModalProvider fractalClick={() => {}}>{children}</ReactUIWalletModalProvider>
                     </AntDesignWalletModalProvider>
                 </MaterialUIWalletDialogProvider>
             </WalletProvider>

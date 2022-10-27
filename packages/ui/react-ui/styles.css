@@ -16,6 +16,20 @@
     border-radius: 4px;
 }
 
+.fractal-info {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 24px 12px;
+}
+
+.fractal-info ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
 .wallet-adapter-button-trigger {
     background-color: #512da8;
 }
@@ -177,7 +191,8 @@
 .wallet-adapter-modal-container {
     display: flex;
     margin: 3rem;
-    min-height: calc(100vh - 6rem); /* 100vh - 2 * margin */
+    min-height: calc(100vh - 6rem);
+    /* 100vh - 2 * margin */
     align-items: center;
     justify-content: center;
 }
@@ -185,7 +200,8 @@
 @media (max-width: 480px) {
     .wallet-adapter-modal-container {
         margin: 1rem;
-        min-height: calc(100vh - 2rem); /* 100vh - 2 * margin */
+        min-height: calc(100vh - 2rem);
+        /* 100vh - 2 * margin */
     }
 }
 
