@@ -41,7 +41,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
     return (
         <ConnectionProvider endpoint={endpoint}>
             <WalletProvider wallets={wallets} autoConnect>
-                <WalletModalProvider fractalClick={() => {}}>
+                <WalletModalProvider>
                     <Component {...pageProps} />
                 </WalletModalProvider>
             </WalletProvider>

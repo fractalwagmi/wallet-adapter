@@ -6,7 +6,7 @@ import { WalletModal } from './WalletModal.js';
 
 export interface WalletModalProviderProps extends WalletModalProps {
     children: ReactNode;
-    fractalClick: (() => void) | undefined;
+    fractalClick?: () => void;
 }
 
 export const WalletModalProvider: FC<WalletModalProviderProps> = ({ children, fractalClick, ...props }) => {
