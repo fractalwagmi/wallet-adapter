@@ -26,7 +26,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
              *   - Solana Mobile Stack Mobile Wallet Adapter Protocol
              *     (https://github.com/solana-mobile/mobile-wallet-adapter)
              *   - Solana Wallet Standard
-             *     (https://github.com/solana-labs/wallet-standard)
+             *     (https://github.com/fractalwagmi/wallet-standard)
              *
              * If you wish to support a wallet that supports neither of those standards,
              * instantiate its legacy wallet adapter here. Common legacy adapters can be found
