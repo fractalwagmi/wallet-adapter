@@ -1,10 +1,10 @@
 import { useWallet } from '@solana/wallet-adapter-react';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Button, ButtonProps } from './Button';
-import { useWalletModal } from './useWalletModal';
-import { WalletConnectButton } from './WalletConnectButton';
-import { WalletIcon } from './WalletIcon';
-import { WalletModalButton } from './WalletModalButton';
+import { Button, ButtonProps } from './Button.js';
+import { useWalletModal } from './useWalletModal.js';
+import { WalletConnectButton } from './WalletConnectButton.js';
+import { WalletIcon } from './WalletIcon.js';
+import { WalletModalButton } from './WalletModalButton.js';
 
 export const WalletMultiButton: FC<ButtonProps> = ({ children, ...props }) => {
     const { publicKey, wallet, disconnect } = useWallet();
