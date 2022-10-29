@@ -1,6 +1,6 @@
 import React, { FC, MouseEvent, useCallback } from 'react';
-import { Button, ButtonProps } from './Button';
-import { useWalletModal } from './useWalletModal';
+import { Button, ButtonProps } from './Button.js';
+import { useWalletModal } from './useWalletModal.js';
 
 export const WalletModalButton: FC<ButtonProps> = ({ children = 'Select Wallet', onClick, ...props }) => {
     const { visible, setVisible } = useWalletModal();
