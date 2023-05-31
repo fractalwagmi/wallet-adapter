@@ -120,14 +120,15 @@ export const WalletModal: FC<WalletModalProps> = ({ className = '', container = 
         const { overflow } = window.getComputedStyle(document.body);
         // Hack to enable fade in animation after mount
         setTimeout(() => setFadeIn(true), 0);
-        // Prevent scrolling on mount
-        document.body.style.overflow = 'hidden';
+        // Prevent scrolling on mount: disable this behavior because the unmount fn doesn't
+        // run correctly (line 131 therefore never happens)
+        // document.body.style.overflow = 'hidden';
         // Listen for keydown events
         window.addEventListener('keydown', handleKeyDown, false);
 
         return () => {
             // Re-enable scrolling when component unmounts
-            document.body.style.overflow = overflow;
+            // document.body.style.overflow = overflow;
             window.removeEventListener('keydown', handleKeyDown, false);
         };
     }, [hideModal, handleTabKey]);
